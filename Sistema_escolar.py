@@ -33,7 +33,7 @@ def buscar_aluno(matricula):
         if aluno["matricula"] == matricula:
             return aluno
     return None
-1
+
 def buscar_professor(matricula):
     # Procurar um professor pela matrícula.
     # usada em cadastrar_professor()
@@ -442,35 +442,33 @@ def mostrar_menu():
     print("11 - Emitir certificado")
     print("0 - Sair")
     
-def sistema():
-    while True:
-        mostrar_menu()
-        opcao = input("Escolha uma opção: ")
-        if opcao == "1":
-            cadastrar_curso()
-        elif opcao == "2":
-            cadastrar_disciplina()
-        elif opcao == "3":
-            cadastrar_aluno()
-        elif opcao == "4":
-            cadastrar_professor()
-        elif opcao == "5":
-            cadastrar_nota()
-        elif opcao == "6":
-            verificar_situacao_aluno()
-        elif opcao == "7":
-            relatorio_geral()
-        elif opcao == "8":
-            relatorio_alunos_por_curso()
-        elif opcao == "9":
-            relatorio_alunos_por_disciplina()
-        elif opcao == "10":
-            relatorio_notas_aluno()              
-        elif opcao == "11":
-            emitir_certificado()
-        elif opcao == "0":
-            print("Sistema encerrado.")
-            break
-        else:
-            print("Opção inválida! Tente novamente.")
-sistema()
+while True:
+    mostrar_menu()
+    opcao = input("Escolha uma opção: ")
+    if opcao == "1":
+        cadastrar_curso()
+    elif opcao == "2":
+        cadastrar_disciplina()
+    elif opcao == "3":
+        cadastrar_aluno()
+    elif opcao == "4":
+        cadastrar_professor()
+    elif opcao == "5":
+        cadastrar_nota()
+    elif opcao == "6":
+        verificar_situacao_aluno()
+    elif opcao == "7":
+        relatorio_geral()
+    elif opcao == "8":
+        relatorio_alunos_por_curso()
+    elif opcao == "9":
+        relatorio_alunos_por_disciplina()
+    elif opcao == "10":
+        relatorio_notas_aluno()              
+    elif opcao == "11":
+        emitir_certificado()
+    elif opcao == "0":
+        print("Sistema encerrado.")
+        break
+    else:
+        print("Opção inválida! Tente novamente.")
