@@ -75,7 +75,7 @@ def contar_disciplinas_aprovadas(matricula):
             quantidade += 1
     return quantidade
 
-#CADASTRAR CURSO -------------------------------------
+#CADASTRAR NOTA -------------------------------------
 def cadastrar_nota():
     # Cadastrar uma nota para um aluno em uma disciplina.
     matricula_aluno = input("Digite a matrícula do aluno: ")
@@ -113,7 +113,7 @@ def cadastrar_nota():
     }
     notas.append(nova_nota)
     print("Nota cadastrada com sucesso!")
-    
+# CADASTRAR CURSO ----------------------------
 def cadastrar_curso():
  #CODIGO E NOME
     codigo = input("Digite o código do curso: ")
