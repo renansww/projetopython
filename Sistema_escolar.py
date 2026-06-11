@@ -42,10 +42,9 @@ def buscar_professor(matricula):
             return professor
     return None
 
-#NOTAS --------------------------------------------------
 
+# Criar uma lista apenas com as notas de um aluno específico
 def notas_do_aluno(matricula):
-    # Criar uma lista apenas com as notas de um aluno específico
     # ele pega a nota pela matricula do aluno que vai estar no dicionario dentro da lista
     lista_notas = []
     for nota in notas:
@@ -131,7 +130,7 @@ def cadastrar_curso():
     print("Curso cadastrado com sucesso!")
 
 #CADASTRAR DISCIPLINA ------------------------------------
-#CODIGO CURSO E NOME
+#precisa de CODIGO CURSO E NOME
 def cadastrar_disciplina():
     codigo = input("Digite o código da disciplina: ")
     if buscar_disciplina(codigo) is not None:
